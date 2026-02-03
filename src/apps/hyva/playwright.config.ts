@@ -3,7 +3,7 @@ import path from "path";
 
 const config: PlaywrightTestConfig = {
     testDir: process.env.TEST_BASE ? `../${process.env.TEST_BASE}/tests` : 'tests',
-    testMatch: "tests/*.spec.ts",
+    testMatch: "**/*.spec.ts",
     timeout: 30 * 1000,
     retries: 3,
     workers: 3,

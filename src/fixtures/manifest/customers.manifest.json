@@ -1,0 +1,79 @@
+{
+  "$schema": "../../docs/phase2/fixture-manifest-schema.json",
+  "description": "Test customer fixtures for E2E testing",
+  "fixtures": [
+    {
+      "id": "test_customer_basic",
+      "email": "test_customer@qbdigital.test",
+      "password": "Test123!@#",
+      "firstname": "Test",
+      "lastname": "Customer",
+      "addresses": [
+        {
+          "type": "billing_shipping",
+          "firstname": "Test",
+          "lastname": "Customer",
+          "street": "123 Test Street",
+          "city": "London",
+          "region": "Greater London",
+          "postcode": "SW1A 1AA",
+          "country": "GB",
+          "telephone": "07700900000"
+        }
+      ],
+      "tier": ["A", "B", "C"]
+    },
+    {
+      "id": "test_customer_multi_address",
+      "email": "test_multi@qbdigital.test",
+      "password": "Test123!@#",
+      "firstname": "Multi",
+      "lastname": "Address",
+      "addresses": [
+        {
+          "type": "billing",
+          "firstname": "Multi",
+          "lastname": "Address",
+          "street": "100 Billing Lane",
+          "city": "Manchester",
+          "region": "Greater Manchester",
+          "postcode": "M1 1AA",
+          "country": "GB",
+          "telephone": "07700900001"
+        },
+        {
+          "type": "shipping",
+          "firstname": "Multi",
+          "lastname": "Address",
+          "street": "200 Shipping Road",
+          "city": "Birmingham",
+          "region": "West Midlands",
+          "postcode": "B1 1BB",
+          "country": "GB",
+          "telephone": "07700900002"
+        }
+      ],
+      "tier": ["C"]
+    },
+    {
+      "id": "test_customer_eu",
+      "email": "test_eu@qbdigital.test",
+      "password": "Test123!@#",
+      "firstname": "European",
+      "lastname": "Customer",
+      "addresses": [
+        {
+          "type": "billing_shipping",
+          "firstname": "European",
+          "lastname": "Customer",
+          "street": "Teststraat 123",
+          "city": "Amsterdam",
+          "postcode": "1012 AB",
+          "country": "NL",
+          "telephone": "+31201234567"
+        }
+      ],
+      "tier": ["B", "C"]
+    }
+  ]
+}

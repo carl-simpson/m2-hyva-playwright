@@ -1,0 +1,37 @@
+{
+  "$schema": "../../docs/phase2/fixture-manifest-schema.json",
+  "description": "Test coupon fixtures for E2E testing",
+  "fixtures": [
+    {
+      "id": "coupon_10_percent",
+      "code": "TESTCOUPON10",
+      "name": "Test 10% Discount",
+      "type": "percentage",
+      "discount_amount": 10,
+      "minimum_order": 0,
+      "apply_to_shipping": false,
+      "tier": ["B", "C"]
+    },
+    {
+      "id": "coupon_5_fixed",
+      "code": "TESTCOUPON5",
+      "name": "Test £5 Off",
+      "type": "fixed",
+      "discount_amount": 5,
+      "minimum_order": 20,
+      "apply_to_shipping": false,
+      "tier": ["B", "C"]
+    },
+    {
+      "id": "coupon_free_shipping",
+      "code": "TESTFREESHIP",
+      "name": "Test Free Shipping",
+      "type": "percentage",
+      "discount_amount": 0,
+      "minimum_order": 50,
+      "apply_to_shipping": true,
+      "free_shipping": true,
+      "tier": ["C"]
+    }
+  ]
+}

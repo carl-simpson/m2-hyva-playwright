@@ -1,5 +1,6 @@
 {
-  "url": "https://hyva.ddev.site/",
-  "faker_locale": "en_US",
-  "currency_symbol": "₹"
+  "url": "http://www.chillyourbeans.local",
+  "faker_locale": "en_GB",
+  "currency_symbol": "£",
+  "skipBaseTests": {}
 }

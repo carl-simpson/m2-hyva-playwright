@@ -1,0 +1,67 @@
+{
+  "$schema": "../../docs/phase2/fixture-manifest-schema.json",
+  "description": "Test product fixtures for E2E testing - Chill Your Beans",
+  "fixtures": [
+    {
+      "id": "simple_product_basic",
+      "type": "simple",
+      "sku": "kenya-aa",
+      "name": "Kenya AA Single Origin Coffee",
+      "price": 9.50,
+      "qty": 100,
+      "status": "enabled",
+      "visibility": "catalog_search",
+      "description": "Kenya AA single origin coffee with notes of blackcurrant, vanilla and chocolate",
+      "shortDescription": "Kenya AA coffee",
+      "tier": ["A", "B", "C"]
+    },
+    {
+      "id": "simple_product_low_stock",
+      "type": "simple",
+      "sku": "TEST_SIMPLE_002",
+      "name": "Test Low Stock Product",
+      "price": 19.99,
+      "qty": 5,
+      "status": "enabled",
+      "visibility": "catalog_search",
+      "description": "A product with low stock for testing stock messaging",
+      "tier": ["B", "C"]
+    },
+    {
+      "id": "simple_product_oos",
+      "type": "simple",
+      "sku": "TEST_OOS_001",
+      "name": "Test Out of Stock Product",
+      "price": 39.99,
+      "qty": 0,
+      "status": "enabled",
+      "visibility": "catalog_search",
+      "description": "An out of stock product for testing OOS messaging",
+      "tier": ["B", "C"]
+    },
+    {
+      "id": "simple_product_expensive",
+      "type": "simple",
+      "sku": "TEST_SIMPLE_003",
+      "name": "Test Expensive Product",
+      "price": 199.99,
+      "qty": 50,
+      "status": "enabled",
+      "visibility": "catalog_search",
+      "description": "An expensive product for testing price display and totals",
+      "tier": ["B", "C"]
+    },
+    {
+      "id": "simple_product_cheap",
+      "type": "simple",
+      "sku": "TEST_SIMPLE_004",
+      "name": "Test Budget Product",
+      "price": 4.99,
+      "qty": 200,
+      "status": "enabled",
+      "visibility": "catalog_search",
+      "description": "A cheap product for testing minimum order thresholds",
+      "tier": ["C"]
+    }
+  ]
+}
